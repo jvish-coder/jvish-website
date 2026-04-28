@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jvish Sdn Bhd — Full-Service Event Production | Kuala Lumpur</title>
+<meta name="description" content="Jvish is a full-service event management and production company in Kuala Lumpur. Strategy, creative, fabrication, logistics — one team, one brief, full accountability.">
+
+<!-- Favicon (inline SVG as data URI — replace with your logo file later) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23234f1e'/><text x='50' y='68' font-family='sans-serif' font-size='52' font-weight='bold' fill='%23ffef7d' text-anchor='middle'>JV</text></svg>">
+
+<!-- Open Graph / WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jvish Sdn Bhd — Full-Service Event Production">
+<meta property="og:description" content="Strategy, creative, fabrication, logistics — one team, one brief, full accountability. Based in Kuala Lumpur.">
+<meta property="og:url" content="https://jvish.my">
+<meta property="og:site_name" content="Jvish Sdn Bhd">
+<meta property="og:locale" content="en_MY">
+<!-- <meta property="og:image" content="https://jvish.my/og-image.jpg"> -->
+<!-- ↑ Uncomment and replace with your actual OG image URL after uploading a 1200x630px image -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jvish Sdn Bhd — Full-Service Event Production">
+<meta name="twitter:description" content="Strategy, creative, fabrication, logistics — one team, one brief, full accountability.">
+
+<!-- Additional SEO -->
+<meta name="author" content="Jvish Sdn Bhd">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jvish.my">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ─── RESET & VARIABLES ─── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --deep-green: #234f1e;
+  --fresh-green: #4a8c42;
+  --sage-tint: #e8f3e6;
+  --off-white: #fafaf5;
+  --warm-yellow: #ffef7d;
+  --near-black: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --font-display: 'Plus Jakarta Sans', 'Trebuchet MS', sans-serif;
+  --font-body: 'DM Sans', 'Trebuchet MS', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--near-black);
+  background: var(--off-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ─── UTILITY ─── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--fresh-green);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--deep-green);
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 620px;
+}
+
+/* ─── NAV ─── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 18px 0;
+  transition: background 0.35s, box-shadow 0.35s, padding 0.35s;
+}
+
+.nav.scrolled {
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 24px rgba(35,79,30,0.08);
+  padding: 12px 0;
+  backdrop-filter: blur(12px);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--deep-green);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav-logo span {
+  color: var(--fresh-green);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--near-black);
+  transition: color 0.25s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--fresh-green);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover { color: var(--fresh-green); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-cta {
+  background: var(--deep-green) !important;
+  color: white !important;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: transform 0.25s, box-shadow 0.25s !important;
+}
+
+.nav-cta::after { display: none !important; }
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(35,79,30,0.25);
+  color: var(--warm-yellow) !important;
+}
+
+/* Hamburger */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--deep-green);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: var(--deep-green);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 70vw;
+  height: 70vw;
+  background: radial-gradient(circle, rgba(74,140,66,0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -15%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(255,239,125,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 140px 24px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content { animation: fadeUp 0.8s ease-out; }
+
+.hero-tagline {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--warm-yellow);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-tagline::before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: var(--warm-yellow);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.hero-title em {
+  font-style: normal;
+  color: var(--warm-yellow);
+  position: relative;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 16px 32px;
+  background: var(--warm-yellow);
+  color: var(--deep-green);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(255,239,125,0.3);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 16px 32px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.25s, background 0.25s;
+}
+
+.btn-outline:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.08);
+}
+
+/* Hero visual */
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeUp 0.8s ease-out 0.2s both;
+}
+
+.hero-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.hero-stat {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 28px 24px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.hero-stat:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,239,125,0.3);
+}
+
+.hero-stat-number {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--warm-yellow);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.hero-stat-label {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.4;
+}
+
+.hero-highlight-card {
+  background: linear-gradient(135deg, var(--fresh-green), var(--deep-green));
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-highlight-card::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-family: var(--font-display);
+  font-size: 8rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.06);
+  line-height: 1;
+}
+
+.hero-highlight-card p {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-highlight-card .tag {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--warm-yellow);
+}
+
+/* ─── ABOUT ─── */
+.about {
+  padding: 120px 0;
+  background: var(--off-white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-text .section-desc { margin-bottom: 32px; }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.value-card {
+  background: var(--sage-tint);
+  border-radius: 14px;
+  padding: 24px;
+  border-left: 4px solid var(--fresh-green);
+  transition: transform 0.3s;
+}
+
+.value-card:hover { transform: translateY(-3px); }
+
+.value-card h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--deep-green);
+  margin-bottom: 6px;
+}
+
+.value-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-feature {
+  background: var(--deep-green);
+  border-radius: 20px;
+  padding: 48px 40px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-feature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,239,125,0.12), transparent 70%);
+  pointer-events: none;
+}
+
+.about-feature h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--warm-yellow);
+}
+
+.about-feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-feature-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.85);
+}
+
+.about-feature-list .icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: rgba(255,239,125,0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+.about-founders {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+.founder-badge {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 16px 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.founder-badge .name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.founder-badge .role {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 2px;
+}
+
+/* ─── SERVICES ─── */
+.services {
+  padding: 120px 0;
+  background: var(--sage-tint);
+  position: relative;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.services-header .section-desc {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 18px;
+  padding: 36px 32px;
+  border: 1px solid rgba(74,140,66,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--fresh-green), var(--warm-yellow));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(35,79,30,0.1);
+}
+
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--sage-tint);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--deep-green);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+/* ─── PROCESS ─── */
+.process {
+  padding: 120px 0;
+  background: var(--off-white);
+}
+
+.process-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.process-header .section-desc {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  position: relative;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 38px;
+  left: 5%;
+  width: 90%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--deep-green), var(--fresh-green), var(--warm-yellow));
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.process-step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number {
+  width: 44px;
+  height: 44px;
+  background: var(--deep-green);
+  color: var(--warm-yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin: 16px auto;
+  border: 4px solid var(--off-white);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.process-step:hover .step-number {
+  transform: scale(1.15);
+  background: var(--fresh-green);
+}
+
+.step-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--deep-green);
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.step-desc {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  padding: 0 4px;
+}
+
+/* ─── PORTFOLIO ─── */
+.portfolio {
+  padding: 120px 0;
+  background: var(--deep-green);
+  color: white;
+}
+
+.portfolio .section-label { color: var(--warm-yellow); }
+.portfolio .section-title { color: white; }
+.portfolio .section-desc { color: rgba(255,255,255,0.7); }
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.portfolio-header .section-desc {
+  margin: 0 auto;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-bottom: 72px;
+}
+
+.portfolio-table th {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  text-align: left;
+  padding: 0 20px 12px;
+}
+
+.portfolio-table td {
+  background: rgba(255,255,255,0.04);
+  padding: 20px;
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.85);
+  border: none;
+}
+
+.portfolio-table tr td:first-child {
+  border-radius: 12px 0 0 12px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--warm-yellow);
+  width: 40px;
+}
+
+.portfolio-table tr td:last-child { border-radius: 0 12px 12px 0; }
+
+.portfolio-table tbody tr {
+  transition: transform 0.2s;
+}
+
+.portfolio-table tbody tr:hover {
+  transform: translateX(6px);
+}
+
+.portfolio-table .cat-tag {
+  display: inline-block;
+  background: rgba(74,140,66,0.25);
+  color: rgba(255,255,255,0.9);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* Clients */
+.clients-section { margin-top: 20px; }
+
+.clients-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--warm-yellow);
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.clients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.client-chip {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.client-chip:hover {
+  border-color: var(--warm-yellow);
+  color: white;
+}
+
+/* ─── CTA ─── */
+.cta {
+  padding: 120px 0;
+  background: var(--sage-tint);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(74,140,66,0.12), transparent 70%);
+  pointer-events: none;
+}
+
+.cta-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.cta .section-title {
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+
+.cta .section-desc {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.cta-contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+
+.cta-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.cta-contact-item .icon-circle {
+  width: 42px;
+  height: 42px;
+  background: var(--deep-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--warm-yellow);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.cta-contact-item strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--deep-green);
+}
+
+/* ─── FOOTER ─── */
+.footer {
+  background: var(--deep-green);
+  padding: 48px 0 32px;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.footer-logo span { color: var(--warm-yellow); }
+
+.footer-tagline {
+  font-style: italic;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.footer-copy {
+  font-size: 0.82rem;
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 968px) {
+  .hero-inner { grid-template-columns: 1fr; padding: 120px 24px 80px; }
+  .hero-visual { max-width: 500px; }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .process-timeline::before { display: none; }
+  .process-step {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    text-align: left;
+    gap: 16px;
+    align-items: start;
+    padding: 12px 0;
+    border-left: 3px solid var(--sage-tint);
+    padding-left: 20px;
+    margin-left: 22px;
+  }
+  .step-number { margin: 0; position: relative; left: -42px; }
+  .step-title { margin-top: 0; }
+  .step-desc { padding: 0; }
+  .process-step > div { grid-column: 2; }
+  .portfolio-table { font-size: 0.85rem; }
+  .services-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 24px;
+    gap: 16px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  }
+  .nav-hamburger { display: flex; }
+  .hero-stat-grid { grid-template-columns: 1fr 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .cta-contact-row { flex-direction: column; align-items: center; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .portfolio-table thead { display: none; }
+  .portfolio-table, .portfolio-table tbody, .portfolio-table tr, .portfolio-table td {
+    display: block;
+    width: 100%;
+  }
+  .portfolio-table tr {
+    margin-bottom: 12px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .portfolio-table td {
+    padding: 12px 20px;
+    border-radius: 0 !important;
+  }
+  .portfolio-table tr td:first-child {
+    background: rgba(255,239,125,0.08);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stat-grid { grid-template-columns: 1fr; }
+  .hero-buttons { flex-direction: column; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ NAV ═══════ -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">J<span>VISH</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tagline">Full-Service Event Production</div>
+      <h1 class="hero-title">
+        We Turn Your Business Objective Into a <em>Live Experience</em>
+      </h1>
+      <p class="hero-subtitle">
+        Strategy, creative, fabrication, logistics, and on-ground execution — one team, one brief, complete accountability. Based in Kuala Lumpur.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">
+          Start Your Event
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn-outline">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stat-grid">
+        <div class="hero-stat">
+          <div class="hero-stat-number">9+</div>
+          <div class="hero-stat-label">Years of Industry Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">7</div>
+          <div class="hero-stat-label">Core Service Specialisations</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">15+</div>
+          <div class="hero-stat-label">Clients Served</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">100%</div>
+          <div class="hero-stat-label">In-House Production</div>
+        </div>
+      </div>
+      <div class="hero-highlight-card">
+        <p>We don't wait to be told what to do. We listen, we think, and we propose — that's how a forklift distributor gets a full brand launch they never knew how to ask for.</p>
+        <span class="tag">Our Philosophy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">Who We Are</div>
+        <h2 class="section-title">Founder-Led.<br>Full Ownership.<br>Zero Handoffs.</h2>
+        <p class="section-desc">
+          Jvish Sdn Bhd is a full-service event management and production company based in Kuala Lumpur. We manage every element in-house — strategy, creative, fabrication, logistics, electrical, and on-ground execution — so our clients have one team, one brief, and complete accountability.
+        </p>
+        <p class="section-desc" style="margin-top: 16px;">
+          Most event companies execute what you ask for. Jvish asks what you're trying to achieve — then builds the entire experience around that outcome.
+        </p>
+        <div class="values-grid">
+          <div class="value-card">
+            <h4>Objective First</h4>
+            <p>Every decision is driven by your business goal.</p>
+          </div>
+          <div class="value-card">
+            <h4>Top to Toe Ownership</h4>
+            <p>From first brief to last box packed. No handoffs.</p>
+          </div>
+          <div class="value-card">
+            <h4>Proactive Partnership</h4>
+            <p>We bring ideas you didn't ask for.</p>
+          </div>
+          <div class="value-card">
+            <h4>Results Over Show</h4>
+            <p>We measure success by yours.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-feature">
+          <h3>In-House Production Arm</h3>
+          <ul class="about-feature-list">
+            <li><span class="icon">🔨</span><span>Custom carpentry, booth structures, and branded installations</span></li>
+            <li><span class="icon">🖨️</span><span>Large & small format printing — banners, backdrops, signage</span></li>
+            <li><span class="icon">⚡</span><span>Full electrical works & power supply by qualified personnel</span></li>
+            <li><span class="icon">🚛</span><span>End-to-end logistics, transportation & storage management</span></li>
+            <li><span class="icon">🪑</span><span>Furniture, props supply & themed fabrication</span></li>
+          </ul>
+          <div class="about-founders">
+            <div class="founder-badge">
+              <div class="name">Joey</div>
+              <div class="role">Co-Founder</div>
+            </div>
+            <div class="founder-badge">
+              <div class="name">Jinny</div>
+              <div class="role">Co-Founder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SERVICES ═══════ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Seven Specialisations.<br>One Accountable Team.</h2>
+      <p class="section-desc">End-to-end event management and production supported by our in-house production team — from concept to completion.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🎯</div>
+        <h3>Brand Activations & Roadshows</h3>
+        <p>On-ground consumer engagement in malls and high-footfall locations. Booth design, fabrication, staffing, sampling, and sales activities — all managed end-to-end.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎤</div>
+        <h3>PR Launches & Product Launches</h3>
+        <p>Full-service launch events for brands entering markets. Venue, stage, AV, talent handling, media setup, guest experience, and custom stage sets.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🏗️</div>
+        <h3>Exhibition & Trade Show Booths</h3>
+        <p>Professional exhibition booth setup from concept to completion. Custom carpentry, branded graphics, signage, lighting — built, installed, and dismantled in-house.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🏢</div>
+        <h3>Corporate Events</h3>
+        <p>Appreciation dinners, award nights, annual dinners. Full management of venue, staging, AV, lighting, guest experience, and registration systems.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎪</div>
+        <h3>Carnivals & Walkathons</h3>
+        <p>Bespoke themed carnivals, community walkathons, and outdoor activations. Themed structures, props, power supply, and full event logistics.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎙️</div>
+        <h3>Conferences & Community Gatherings</h3>
+        <p>End-to-end conference production including staging, AV, registration systems, printed materials, and flow management for large audiences.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📋</div>
+        <h3>Event Coordination & Management</h3>
+        <p>For clients who need a capable coordinator to manage vendors, timelines, logistics, and on-ground execution for complex, multi-party events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PROCESS ═══════ -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <div class="section-label">How We Work</div>
+      <h2 class="section-title">Seven Steps. No Surprises.</h2>
+      <p class="section-desc">Joey and Jinny are personally present and accountable at every stage. No account managers, no handoffs.</p>
+    </div>
+    <div class="process-timeline reveal">
+      <div class="process-step">
+        <div class="step-number">01</div>
+        <div>
+          <div class="step-title">Discovery & Briefing</div>
+          <div class="step-desc">Understand your brand, objective, audience, budget, and timeline.</div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">02</div>
+        <div>
+          <div class="step-title">Strategy & Concept</div>
+          <div class="step-desc">Tailored concept with activities, decor direction, and execution plan.</div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">03</div>
+        <div>
+          <div class="step-title">Proposal & Planning</div>
+          <div class="step-desc">Full proposal with timeline, budget, vendor plan, and flow design.</div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">04</div>
+        <div>
+          <div class="step-title">Production & Build</div>
+          <div class="step-desc">In-house fabrication, printing, electrical, logistics, and crew briefing.</div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">05</div>
+        <div>
+          <div class="step-title">On-Site Execution</div>
+          <div class="step-desc">Both founders on-ground. Setup, crew management, flawless delivery.</div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">06</div>
+        <div>
+          <div class="step-title">Dismantle & Logistics</div>
+          <div class="step-desc">Structured teardown, venue clearance, and return logistics.</div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">07</div>
+        <div>
+          <div class="step-title">Post-Event Wrap-Up</div>
+          <div class="step-desc">Photos, summary, outcomes, and learnings within 5 working days.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PORTFOLIO ═══════ -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="portfolio-header reveal">
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title">Projects & Clients</h2>
+      <p class="section-desc">A selection of events delivered by Jvish — from booth fabrication to full end-to-end strategic event planning.</p>
+    </div>
+    <table class="portfolio-table reveal">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Project</th>
+          <th>Client</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Exhibition Booth Setup</td>
+          <td>BIMAGE Consulting</td>
+          <td><span class="cat-tag">Exhibition</span></td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Exhibition Booth Setup</td>
+          <td>International Client (Confidential)</td>
+          <td><span class="cat-tag">Exhibition</span></td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Community Walkathon</td>
+          <td>EBENE Healthcare Apparel</td>
+          <td><span class="cat-tag">Brand Activation</span></td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Private Event</td>
+          <td>Ventamin</td>
+          <td><span class="cat-tag">Corporate</span></td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>Project Coordination</td>
+          <td>Tosoul International Competition</td>
+          <td><span class="cat-tag">Event Coordination</span></td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>PR Launch & Roadshow</td>
+          <td>EBENE Healthcare Apparel</td>
+          <td><span class="cat-tag">PR Launch</span></td>
+        </tr>
+        <tr>
+          <td>07</td>
+          <td>Brand Launching Event</td>
+          <td>Goldbell Equipment</td>
+          <td><span class="cat-tag">Corporate Launch</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="clients-section reveal">
+      <div class="clients-title">Brands That Trust Us</div>
+      <div class="clients-grid">
+        <div class="client-chip">EBENE</div>
+        <div class="client-chip">Goldbell Equipment</div>
+        <div class="client-chip">BIMAGE Consulting</div>
+        <div class="client-chip">Timing & You</div>
+        <div class="client-chip">AYP Group</div>
+        <div class="client-chip">Comvita</div>
+        <div class="client-chip">Great Vision</div>
+        <div class="client-chip">Owners Circle</div>
+        <div class="client-chip">Orilogy</div>
+        <div class="client-chip">Power of Life</div>
+        <div class="client-chip">Ventamin</div>
+        <div class="client-chip">Tosoul International</div>
+        <div class="client-chip">Ai FM</div>
+        <div class="client-chip">Champignons Pâtisserie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CTA ═══════ -->
+<section class="cta" id="contact">
+  <div class="container cta-inner">
+    <div class="section-label">Let's Talk</div>
+    <h2 class="section-title reveal">Tell Us What You're Trying to Achieve. We'll Come Back With a Plan.</h2>
+    <p class="section-desc reveal">Your wish is our brief. Your result is our measure.</p>
+    <div class="hero-buttons reveal" style="justify-content: center;">
+      <a href="mailto:jvish.event@gmail.com" class="btn-primary" style="background: var(--deep-green); color: var(--warm-yellow);">
+        Email Us
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a href="https://wa.me/60103938943" class="btn-outline" style="color: var(--deep-green); border-color: var(--deep-green);" target="_blank">
+        WhatsApp Joey
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.09 5.18 2 2 0 015.11 3h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 11.91a16 16 0 006 6l2.27-2.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </a>
+    </div>
+    <div class="cta-contact-row reveal">
+      <div class="cta-contact-item">
+        <div class="icon-circle">✉</div>
+        <div><strong>jvish.event@gmail.com</strong></div>
+      </div>
+      <div class="cta-contact-item">
+        <div class="icon-circle">📱</div>
+        <div><strong>Joey</strong> · +60 10-393 8943</div>
+      </div>
+      <div class="cta-contact-item">
+        <div class="icon-circle">📍</div>
+        <div><strong>Kuala Lumpur</strong>, Malaysia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-logo">J<span>VISH</span> Sdn Bhd</div>
+      <div class="footer-tagline">Bringing Events to Life, One Wish at a Time.</div>
+    </div>
+    <div class="footer-copy">© 2026 Jvish Sdn Bhd. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+// Navbar scroll effect
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Mobile hamburger
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+
+// Close mobile nav on link click
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
