@@ -29,7 +29,7 @@
   gtag('js', new Date());
   gtag('config', 'G-XXXXXXXXXX');
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EventPlanningBusiness","name":"Jvish Sdn Bhd","alternateName":"Jvish","url":"https://jvish.my","description":"On-ground event production company in Kuala Lumpur. We plan, fabricate, and execute any event format in-house.","foundingDate":"2021-03","address":{"@type":"PostalAddress","addressLocality":"Kuala Lumpur","addressCountry":"MY"},"telephone":"+60103938943","email":"jvish.event@gmail.com","founder":[{"@type":"Person","name":"Joey Ong","jobTitle":"Co-Founder, Business Development"},{"@type":"Person","name":"Jinny","jobTitle":"Co-Founder, Operations"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EventPlanningBusiness","name":"Jvish Sdn Bhd","alternateName":"Jvish","url":"https://jvish.my","description":"On-ground event production company in Kuala Lumpur. We plan, fabricate, and execute any event format in-house.","foundingDate":"2021-03","address":{"@type":"PostalAddress","addressLocality":"Kuala Lumpur","addressCountry":"MY"},"telephone":"+60103938943","email":"jvish.event@gmail.com","founder":[{"@type":"Person","name":"Joey Ong","jobTitle":"Co-Founder, Business Development"},{"@type":"Person","name":"Jinny Liu","jobTitle":"Co-Founder, Operations"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -70,7 +70,9 @@ img{max-width:100%;display:block}
 .nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px 0;transition:all .35s}
 .nav.scrolled{background:rgba(254,254,248,.96);box-shadow:0 2px 20px rgba(35,79,30,.06);padding:13px 0;backdrop-filter:blur(16px)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
-.nav-logo{font-family:var(--font-display);font-weight:900;font-size:1.55rem;color:#fff;text-decoration:none;letter-spacing:-1px;transition:color .35s}
+.nav-logo{font-family:var(--font-display);font-weight:900;font-size:1.55rem;color:#fff;text-decoration:none;letter-spacing:-1px;transition:color .35s;display:flex;align-items:center}
+.nav-logo-img{height:38px;width:auto;display:block;filter:brightness(0) invert(1);transition:filter .35s}
+.nav.scrolled .nav-logo-img{filter:none}
 .nav-logo span{color:var(--warm-yellow)}
 .nav.scrolled .nav-logo{color:var(--deep-green)}
 .nav.scrolled .nav-logo span{color:var(--fresh-green)}
@@ -227,14 +229,15 @@ img{max-width:100%;display:block}
 /* ── CLIENTS ── */
 .clients{padding:80px 0;background:linear-gradient(135deg,var(--sage-tint),var(--yellow-soft))}
 .clients-header{text-align:center;margin-bottom:48px}
-.clients-logos{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;max-width:1000px;margin:0 auto}
-.logo-cell{background:white;border:1px solid var(--border-light);border-radius:14px;height:90px;display:flex;align-items:center;justify-content:center;padding:18px;transition:transform .25s,box-shadow .25s}
-.logo-cell:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(35,79,30,.08)}
-.logo-cell img{max-width:100%;max-height:100%;object-fit:contain;filter:grayscale(100%);opacity:.7;transition:filter .25s,opacity .25s}
-.logo-cell:hover img{filter:grayscale(0);opacity:1}
-.logo-fallback{display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:.82rem;color:var(--deep-green);text-align:center;line-height:1.2}
-.clients-note{text-align:center;font-size:.8rem;color:var(--text-light);margin-top:32px}
-.clients-note code{background:rgba(35,79,30,.08);padding:2px 8px;border-radius:5px;font-size:.78rem;color:var(--deep-green)}
+.logo-marquee{overflow:hidden;width:100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.logo-marquee-track{display:flex;gap:20px;width:max-content;animation:logoScroll 32s linear infinite}
+.logo-marquee:hover .logo-marquee-track{animation-play-state:paused}
+@keyframes logoScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.logo-slide{flex-shrink:0;width:190px;height:104px;background:#fff;border:1px solid var(--border-light);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:22px;transition:box-shadow .25s}
+.logo-slide:hover{box-shadow:0 8px 20px rgba(35,79,30,.1)}
+.logo-slide img{max-width:100%;max-height:100%;object-fit:contain;filter:grayscale(100%);opacity:.75;transition:filter .25s,opacity .25s}
+.logo-slide:hover img{filter:grayscale(0);opacity:1}
+.logo-fallback{display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:.9rem;color:var(--deep-green);text-align:center;line-height:1.2}
 
 /* ── CONTACT ── */
 .contact{padding:120px 0;background:var(--deep-green);position:relative;overflow:hidden}
@@ -272,6 +275,7 @@ img{max-width:100%;display:block}
 .footer{background:#0d1f0b;padding:48px 0 28px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
 .footer-logo{font-family:var(--font-display);font-weight:900;font-size:1.4rem;color:#fff;letter-spacing:-1px}
+.footer-logo-img{height:34px;width:auto;display:block;filter:brightness(0) invert(1)}
 .footer-logo span{color:var(--warm-yellow)}
 .footer-tagline{font-size:.85rem;color:rgba(255,255,255,.3);font-style:italic;margin-top:4px}
 .footer-copy{font-size:.78rem;color:rgba(255,255,255,.25)}
@@ -309,7 +313,7 @@ img{max-width:100%;display:block}
   .events-grid{grid-template-columns:1fr}
   .team-duo img{height:380px}
   .form-row{grid-template-columns:1fr}
-  .clients-logos{grid-template-columns:repeat(3,1fr)}
+  .logo-slide{width:150px;height:90px;padding:18px}
   .footer-inner{flex-direction:column;text-align:center}
   .process-steps{grid-template-columns:1fr}
   .hero-scroll{display:none}
@@ -328,7 +332,7 @@ img{max-width:100%;display:block}
 <!-- NAV -->
 <nav class="nav" id="navbar">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">J<span>VISH</span></a>
+    <a href="#" class="nav-logo"><img src="images/jvish-logo.png" alt="Jvish" class="nav-logo-img"></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#events">Our Work</a></li>
@@ -347,6 +351,7 @@ img{max-width:100%;display:block}
     <!-- The poster image (images/hero-bg.jpg) shows while the video loads, and on mobile if video is disabled -->
     <video autoplay muted loop playsinline poster="images/hero-bg.jpg">
       <source src="images/hero-video.mp4" type="video/mp4">
+      <source src="images/hero-video.MOV" type="video/quicktime">
     </video>
   </div>
   <div class="hero-overlay"></div>
@@ -683,7 +688,7 @@ img{max-width:100%;display:block}
       <!-- Upload: images/founders.jpg — one photo of you both together -->
       <img src="images/founders.jpg" alt="Joey and Jinny — Founders of Jvish">
       <div class="team-duo-caption">
-        <strong>Joey &amp; Jinny</strong>
+        <strong>Joey Ong &amp; Jinny Liu</strong>
         <span>Co-Founders · Jvish Sdn Bhd</span>
       </div>
     </div>
@@ -697,23 +702,30 @@ img{max-width:100%;display:block}
       <div class="section-label">Who We've Worked With</div>
       <h2 class="section-title">Brands That Brief Us.</h2>
     </div>
-    <div class="clients-logos reveal">
-      <!-- Upload each logo as images/logo-NAME.png (transparent PNG works best) -->
-      <!-- To add a logo: replace the placeholder div with <img src="images/logo-ebene.png" alt="EBENE"> -->
-      <div class="logo-cell"><img src="images/logo-ebene.png" alt="EBENE Bio-Ray Healthcare" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">EBENE</div></div>
-      <div class="logo-cell"><img src="images/logo-goldbell.png" alt="Goldbell Equipment" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Goldbell</div></div>
-      <div class="logo-cell"><img src="images/logo-bimage.png" alt="BIMAGE Consulting" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">BIMAGE</div></div>
-      <div class="logo-cell"><img src="images/logo-syahirah.png" alt="Syahirah Malaysia" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Syahirah</div></div>
-      <div class="logo-cell"><img src="images/logo-comvita.png" alt="Comvita" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Comvita</div></div>
-      <div class="logo-cell"><img src="images/logo-ventamin.png" alt="Ventamin" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Ventamin</div></div>
-      <div class="logo-cell"><img src="images/logo-poweroflife.png" alt="Power of Life" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Power of Life</div></div>
-      <div class="logo-cell"><img src="images/logo-aypgroup.png" alt="AYP Group" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">AYP Group</div></div>
-      <div class="logo-cell"><img src="images/logo-timingyou.png" alt="Timing & You" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Timing &amp; You</div></div>
-      <div class="logo-cell"><img src="images/logo-greatvision.png" alt="Great Vision" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Great Vision</div></div>
-      <div class="logo-cell"><img src="images/logo-ownerscircle.png" alt="Owners Circle" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Owners Circle</div></div>
-      <div class="logo-cell"><img src="images/logo-tosoul.png" alt="Tosoul International" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback">Tosoul</div></div>
+  </div>
+  <div class="logo-marquee reveal">
+    <div class="logo-marquee-track">
+      <!-- 8 logos — upload as images/logo-NAME.png or .jpeg (either works). If missing, brand name shows as text. -->
+      <div class="logo-slide"><img src="images/logo-aifm.png" alt="Ai FM"><div class="logo-fallback">Ai FM</div></div>
+      <div class="logo-slide"><img src="images/logo-ebene.png" alt="EBENE Bio-Ray Healthcare"><div class="logo-fallback">EBENE</div></div>
+      <div class="logo-slide"><img src="images/logo-syahirah.png" alt="Syahirah Malaysia"><div class="logo-fallback">Syahirah</div></div>
+      <div class="logo-slide"><img src="images/logo-goldbell.png" alt="Goldbell Equipment"><div class="logo-fallback">Goldbell</div></div>
+      <div class="logo-slide"><img src="images/logo-ventamin.png" alt="Ventamin"><div class="logo-fallback">Ventamin</div></div>
+      <div class="logo-slide"><img src="images/logo-comvita.png" alt="Comvita"><div class="logo-fallback">Comvita</div></div>
+      <div class="logo-slide"><img src="images/logo-bimage.png" alt="BIMAGE Consulting"><div class="logo-fallback">BIMAGE</div></div>
+      <div class="logo-slide"><img src="images/logo-arcserve.png" alt="Arcserve"><div class="logo-fallback">Arcserve</div></div>
+      <div class="logo-slide"><img src="images/logo-poweroflife.png" alt="Power of Life"><div class="logo-fallback">Power of Life</div></div>
+      <!-- Duplicate set for seamless loop — keep identical to above -->
+      <div class="logo-slide"><img src="images/logo-aifm.png" alt="Ai FM"><div class="logo-fallback">Ai FM</div></div>
+      <div class="logo-slide"><img src="images/logo-ebene.png" alt="EBENE Bio-Ray Healthcare"><div class="logo-fallback">EBENE</div></div>
+      <div class="logo-slide"><img src="images/logo-syahirah.png" alt="Syahirah Malaysia"><div class="logo-fallback">Syahirah</div></div>
+      <div class="logo-slide"><img src="images/logo-goldbell.png" alt="Goldbell Equipment"><div class="logo-fallback">Goldbell</div></div>
+      <div class="logo-slide"><img src="images/logo-ventamin.png" alt="Ventamin"><div class="logo-fallback">Ventamin</div></div>
+      <div class="logo-slide"><img src="images/logo-comvita.png" alt="Comvita"><div class="logo-fallback">Comvita</div></div>
+      <div class="logo-slide"><img src="images/logo-bimage.png" alt="BIMAGE Consulting"><div class="logo-fallback">BIMAGE</div></div>
+      <div class="logo-slide"><img src="images/logo-arcserve.png" alt="Arcserve"><div class="logo-fallback">Arcserve</div></div>
+      <div class="logo-slide"><img src="images/logo-poweroflife.png" alt="Power of Life"><div class="logo-fallback">Power of Life</div></div>
     </div>
-    <p class="clients-note reveal">Add or swap logos anytime — upload a transparent PNG named <code>logo-name.png</code> to your images folder.</p>
   </div>
 </section>
 
@@ -728,24 +740,24 @@ img{max-width:100%;display:block}
         <div class="contact-info-list">
           <div class="contact-info-item">
             <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.09 5.18 2 2 0 015.11 3h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 11.91a16 16 0 006 6l2.27-2.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
-            <div class="ci-text"><strong>Joey · +60 10-393 8943</strong><span>Business Development</span></div>
+            <div class="ci-text"><strong>Joey Ong · +60 10-393 8943</strong></div>
           </div>
           <div class="contact-info-item">
             <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.09 5.18 2 2 0 015.11 3h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 11.91a16 16 0 006 6l2.27-2.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
-            <div class="ci-text"><strong>Jinny · +60 14-989 4539</strong><span>Operations & Projects</span></div>
+            <div class="ci-text"><strong>Jinny Liu · +60 14-989 4539</strong></div>
           </div>
           <div class="contact-info-item">
             <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div class="ci-text"><strong>jvish.event@gmail.com</strong><span>General Enquiries</span></div>
+            <div class="ci-text"><strong>jvish.event@gmail.com</strong></div>
           </div>
           <div class="contact-info-item">
             <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <div class="ci-text"><strong>Kuala Lumpur, Malaysia</strong><span>Serving nationwide</span></div>
+            <div class="ci-text"><strong>Kuala Lumpur, Malaysia</strong><span style="font-weight:700;color:var(--warm-yellow)">Serving nationwide</span></div>
           </div>
         </div>
-        <a href="https://wa.me/60103938943?text=Hi%20Joey%2C%20I%20want%20to%20discuss%20an%20event%20with%20Jvish." class="wa-direct" target="_blank">
+        <a href="https://wa.me/60103938943?text=Hi%20Jvish%2C%20I%20want%20to%20discuss%20an%20event." class="wa-direct" target="_blank">
           <svg viewBox="0 0 32 32"><path d="M16.01 2.64C8.63 2.64 2.64 8.62 2.64 16c0 2.36.62 4.66 1.8 6.7L2.5 29.5l7.02-1.84A13.36 13.36 0 0016.01 29.36c7.38 0 13.35-5.98 13.35-13.36S23.39 2.64 16.01 2.64z"/></svg>
-          WhatsApp Joey Now
+          WhatsApp us!
         </a>
       </div>
       <div class="contact-form-box reveal-right">
@@ -753,7 +765,7 @@ img{max-width:100%;display:block}
         <p class="form-sub">Fill this in and we'll come back within 24 hours — with a real response, not a template.</p>
         <form id="enquiryForm" onsubmit="handleSubmit(event)">
           <!-- ═══ WEB3FORMS — replace YOUR_ACCESS_KEY_HERE with your key from web3forms.com ═══ -->
-          <input type="hidden" name="access_key" value="71188449-fbaa-45ad-911f-249111d117ad">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
           <input type="hidden" name="subject" value="New Event Enquiry from jvish.my">
           <input type="hidden" name="from_name" value="Jvish Website">
           <input type="checkbox" name="botcheck" style="display:none">
@@ -791,7 +803,7 @@ img{max-width:100%;display:block}
 <footer class="footer">
   <div class="container footer-inner">
     <div>
-      <div class="footer-logo">J<span>VISH</span></div>
+      <div class="footer-logo"><img src="images/jvish-logo.png" alt="Jvish" class="footer-logo-img"></div>
       <div class="footer-tagline">Bringing Events to Life, One Wish at a Time.</div>
     </div>
     <div class="footer-copy">© 2026 Jvish Sdn Bhd · Kuala Lumpur, Malaysia</div>
@@ -799,12 +811,29 @@ img{max-width:100%;display:block}
 </footer>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/60103938943?text=Hi%20Joey%2C%20I%20want%20to%20discuss%20an%20event%20with%20Jvish." class="wa-float" target="_blank" aria-label="WhatsApp Joey">
-  <span class="wa-label">Chat with Joey</span>
+<a href="https://wa.me/60103938943?text=Hi%20Jvish%2C%20I%20want%20to%20discuss%20an%20event." class="wa-float" target="_blank" aria-label="WhatsApp us">
+  <span class="wa-label">WhatsApp us!</span>
   <span class="wa-btn"><svg viewBox="0 0 32 32"><path d="M16.01 2.64C8.63 2.64 2.64 8.62 2.64 16c0 2.36.62 4.66 1.8 6.7L2.5 29.5l7.02-1.84A13.36 13.36 0 0016.01 29.36c7.38 0 13.35-5.98 13.35-13.36S23.39 2.64 16.01 2.64zm0 24.47c-2.17 0-4.3-.58-6.15-1.7l-.44-.26-4.57 1.2 1.22-4.44-.29-.46A11.07 11.07 0 014.9 16c0-6.13 4.99-11.11 11.11-11.11S27.12 9.87 27.12 16s-4.99 11.11-11.11 11.11zm6.1-8.32c-.33-.17-1.97-.97-2.28-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.05 1.3-.19.22-.38.25-.72.08-.33-.17-1.41-.52-2.68-1.65-.99-.88-1.66-1.97-1.85-2.3-.19-.33-.02-.51.15-.68.15-.15.33-.38.5-.58.17-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.16 1.13-1.16 2.76s1.19 3.2 1.35 3.42c.17.22 2.34 3.57 5.66 5.01.79.34 1.41.55 1.89.7.79.25 1.52.22 2.09.13.64-.1 1.97-.8 2.25-1.58.28-.78.28-1.44.19-1.58-.08-.14-.3-.22-.63-.39z"/></svg></span>
 </a>
 
 <script>
+// Auto-detect image extension — tries .jpg, .jpeg, .png if the first fails (so extension never breaks)
+document.querySelectorAll('img:not([onerror])').forEach(function(img){
+  var srcAttr = img.getAttribute('src') || '';
+  if(srcAttr.indexOf('images/') === -1) return;
+  var exts = ['.jpg','.jpeg','.png','.JPG','.JPEG','.PNG'];
+  var base = srcAttr.replace(/\.[^.\/]+$/,'');
+  var idx = 0;
+  img.addEventListener('error', function(){
+    while(idx < exts.length){
+      var cand = base + exts[idx]; idx++;
+      if(cand !== img.getAttribute('src')){ img.setAttribute('src', cand); return; }
+    }
+    // Exhausted all extensions — if there's a text fallback (client logos), show it
+    var sib = img.nextElementSibling;
+    if(sib && sib.classList.contains('logo-fallback')){ img.style.display='none'; sib.style.display='flex'; }
+  });
+});
 // Track WhatsApp clicks as conversions in GA
 document.querySelectorAll('a[href*="wa.me"]').forEach(link=>{
   link.addEventListener('click',()=>{if(typeof gtag==='function'){gtag('event','contact_whatsapp',{event_category:'engagement',event_label:'whatsapp_click'});}});
