@@ -233,11 +233,9 @@ img{max-width:100%;display:block}
 .logo-marquee-track{display:flex;gap:20px;width:max-content;animation:logoScroll 32s linear infinite}
 .logo-marquee:hover .logo-marquee-track{animation-play-state:paused}
 @keyframes logoScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.logo-slide{flex-shrink:0;width:190px;height:104px;background:#fff;border:1px solid var(--border-light);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:22px;transition:box-shadow .25s}
-.logo-slide:hover{box-shadow:0 8px 20px rgba(35,79,30,.1)}
-.logo-slide img{max-width:100%;max-height:100%;object-fit:contain;filter:grayscale(100%);opacity:.75;transition:filter .25s,opacity .25s}
-.logo-slide:hover img{filter:grayscale(0);opacity:1}
-.logo-fallback{display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:.9rem;color:var(--deep-green);text-align:center;line-height:1.2}
+.logo-slide{flex-shrink:0;width:200px;height:110px;display:flex;align-items:center;justify-content:center;padding:16px}
+.logo-slide img{max-width:100%;max-height:100%;object-fit:contain}
+.logo-fallback{display:none;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:.95rem;color:var(--deep-green);text-align:center;line-height:1.2}
 
 /* ── CONTACT ── */
 .contact{padding:120px 0;background:var(--deep-green);position:relative;overflow:hidden}
@@ -272,13 +270,19 @@ img{max-width:100%;display:block}
 .form-note{font-size:.75rem;color:rgba(255,255,255,.3);text-align:center;margin-top:10px}
 
 /* ── FOOTER ── */
-.footer{background:#0d1f0b;padding:48px 0 28px}
-.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.footer{background:var(--deep-green);padding:48px 0 32px}
+.footer-inner{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px}
+.footer-left{display:flex;flex-direction:column;gap:8px}
 .footer-logo{font-family:var(--font-display);font-weight:900;font-size:1.4rem;color:#fff;letter-spacing:-1px}
 .footer-logo-img{height:34px;width:auto;display:block;filter:brightness(0) invert(1)}
 .footer-logo span{color:var(--warm-yellow)}
-.footer-tagline{font-size:.85rem;color:rgba(255,255,255,.3);font-style:italic;margin-top:4px}
-.footer-copy{font-size:.78rem;color:rgba(255,255,255,.25)}
+.footer-tagline{font-size:.85rem;color:rgba(255,255,255,.5);font-style:italic}
+.footer-address{font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.6;text-align:right}
+.footer-right{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.footer-social{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#fff;font-family:var(--font-display);font-weight:600;font-size:.85rem;padding:8px 16px;border:1px solid rgba(255,255,255,.2);border-radius:30px;transition:all .25s}
+.footer-social:hover{background:var(--warm-yellow);color:var(--deep-green);border-color:var(--warm-yellow)}
+.footer-social svg{width:18px;height:18px}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.45)}
 
 /* ── WHATSAPP FLOAT ── */
 .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;text-decoration:none;animation:floatIn .6s ease-out 1s both}
@@ -315,6 +319,8 @@ img{max-width:100%;display:block}
   .form-row{grid-template-columns:1fr}
   .logo-slide{width:150px;height:90px;padding:18px}
   .footer-inner{flex-direction:column;text-align:center}
+  .footer-left{align-items:center}
+  .footer-right{align-items:center}
   .process-steps{grid-template-columns:1fr}
   .hero-scroll{display:none}
 }
@@ -603,52 +609,35 @@ img{max-width:100%;display:block}
       <p class="section-desc">We have our own workshop. Our team fabricates, prints, wires, and loads — then shows up on-site and runs the whole thing. This is what separates Jvish from a coordinator with a vendor list.</p>
     </div>
     <div class="built-grid reveal">
-      <!-- Upload: images/bts-1.jpg to images/bts-5.jpg -->
-      <!-- When ready, replace each placeholder div with: <img src="images/bts-X.jpg" alt="Jvish fabrication"> -->
       <div class="built-item tall">
-        <div class="built-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <span>Upload<br>images/bts-1.jpg<br>(tall shot — team at work)</span>
-        </div>
+        <img src="images/bts-1.jpg" alt="Jvish workshop — team at work">
         <div class="built-item-overlay"></div>
         <div class="built-item-label"><span>Workshop Floor</span></div>
       </div>
       <div class="built-item">
-        <div class="built-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <span>images/bts-2.jpg</span>
-        </div>
+        <img src="images/bts-2.jpg" alt="Jvish booth fabrication">
         <div class="built-item-overlay"></div>
         <div class="built-item-label"><span>Booth Fabrication</span></div>
       </div>
       <div class="built-item">
-        <div class="built-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <span>images/bts-3.jpg</span>
-        </div>
+        <img src="images/bts-3.jpg" alt="Jvish signage and print">
         <div class="built-item-overlay"></div>
-        <div class="built-item-label"><span>Signage & Print</span></div>
+        <div class="built-item-label"><span>Signage &amp; Print</span></div>
       </div>
       <div class="built-item">
-        <div class="built-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <span>images/bts-4.jpg</span>
-        </div>
+        <img src="images/bts-4.jpg" alt="Jvish on-site setup">
         <div class="built-item-overlay"></div>
         <div class="built-item-label"><span>Site Setup</span></div>
       </div>
       <div class="built-item">
-        <div class="built-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <span>images/bts-5.jpg</span>
-        </div>
+        <img src="images/bts-5.jpg" alt="Jvish installation day">
         <div class="built-item-overlay"></div>
         <div class="built-item-label"><span>Installation Day</span></div>
       </div>
     </div>
     <div class="built-cta-row reveal">
       <a href="#contact" class="btn-yellow">Brief Us On Your Event</a>
-      <p class="built-note">BTS photos coming soon — check back or follow us on Instagram.</p>
+      <p class="built-note">Our own workshop. Our own team. Every build, start to finish.</p>
     </div>
   </div>
 </section>
@@ -802,11 +791,21 @@ img{max-width:100%;display:block}
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
-    <div>
+    <div class="footer-left">
       <div class="footer-logo"><img src="images/jvish-logo.png" alt="Jvish" class="footer-logo-img"></div>
       <div class="footer-tagline">Bringing Events to Life, One Wish at a Time.</div>
     </div>
-    <div class="footer-copy">© 2026 Jvish Sdn Bhd · Kuala Lumpur, Malaysia</div>
+    <div class="footer-right">
+      <a href="https://www.instagram.com/jvishevent/" target="_blank" rel="noopener" class="footer-social" aria-label="Follow Jvish on Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <span>@jvishevent</span>
+      </a>
+      <div class="footer-address">
+        3, Jalan Tembaga, SD5/2C, Bandar Sri Damansara<br>
+        52200 Kuala Lumpur, Wilayah Persekutuan
+      </div>
+      <div class="footer-copy">© 2026 Jvish Sdn Bhd · Kuala Lumpur, Malaysia</div>
+    </div>
   </div>
 </footer>
 
